@@ -5,7 +5,7 @@ on:
     types: [ opened, synchronize, reopened ]
     branches:
       - '*'
-    paths: FunctionAppService/FunctionAppService
+    paths: FunctionAppService/**
 
 env:
   CONFIGURATION: Release
