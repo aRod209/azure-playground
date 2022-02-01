@@ -11,7 +11,7 @@ namespace FunctionAppService
         /// Runs the Azure Function.
         /// </summary>
         /// <param name="req">The <see cref="HttpRequestData"/>.</param>
-        /// <param name="name">The name to query in DB.</param>
+        /// <param name="name">The name to query in CosmosDB.</param>
         /// <returns></returns>
         [Function("Function1")]
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req, string name)
