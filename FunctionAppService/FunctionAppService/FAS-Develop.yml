@@ -6,6 +6,9 @@ pr: none
 pool:
   vmImage: 'windows-latest'
 
+variables:
+  buildConfiguration: 'Release'
+
 steps:
 - task: UseDotNet@2
   displayName: 'Use .NET SDK 6.x'
