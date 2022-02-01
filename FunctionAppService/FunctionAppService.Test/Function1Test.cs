@@ -16,6 +16,7 @@ namespace FunctionAppService.Test
         /// <summary>A mock of <see cref="HttpRequestData"/>.</summary>
         private Mock<HttpRequestData> httpRequestDataMock = null!;
 
+        /// <summary>A mock of <see cref="FunctionContext"/>.</summary>
         private Mock<FunctionContext> functionContextMock = null!;
 
         [SetUp]
