@@ -10,7 +10,7 @@ on:
 env:
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: FunctionAppService/FunctionAppService
+  WORKING_DIRECTORY: FunctionAppService
   DOTNET_CORE_VERSION_INPROC: 3.1.x
 
 jobs:
@@ -27,4 +27,4 @@ jobs:
       - name: Build
         run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore -warnAsError
       - name: Test
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build --verbosity normal
